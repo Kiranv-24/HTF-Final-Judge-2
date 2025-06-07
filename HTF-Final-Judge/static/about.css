@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url('uwp4229674 (1).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    width: 100%;
+}
+
+#quanta{
+    font-family: "Unbounded";
+    color: #040507;
+    font-size: 25px;
+    margin-right: 60px;
+}
+
+#nav-bar {
+    height: 78px;
+    padding: 0 6rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #de56e2;
+    color: white;
+    margin: 20px auto;
+    border-radius: 50px;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#nav-bar img{
+    height: 70px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar a:hover {
+    color: black;
+    border: 1px solid #4b66de;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #4b66de;
+}
+
+#title{
+    font-family: "Unbounded";
+    color: white;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 4rem;
+}
+
+#container {
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 3rem;
+    border-radius: 15px ;
+    margin-left: 15rem;
+    margin-top: 4rem;
+    letter-spacing: 1px;
+}
+
+#container p {
+    font-family: "Unbounded";
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+} 

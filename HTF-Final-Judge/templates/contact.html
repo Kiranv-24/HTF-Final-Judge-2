@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <title>Contact US</title>
+</head>
+<body>
+    <div id = "main">
+
+
+        <!-- NAV-BAR -->       
+        <div id="nav-bar">
+            <img src = "static/Logo2.png">
+            <h4 id = "quanta">SECURE-SURF</h4>
+            <a href = "/">HOME</a>
+            <a href = "/about">ABOUT</a> 
+            <a href = "/contact">CONTACT</a>
+        </div>
+
+        <div id = "title">Contact Us</div>
+
+        <div id = "container">
+            <form action="https://api.web3forms.com/submit" method="POST" id = "contact-left">
+                <input type="hidden" name="access_key" value="01bcec02-442d-4db9-bffa-fd7c172254e2">
+                <input type = "text", name = "name" placeholder = "Your Name" id = "contact-inputs", required>
+                <input type = "email", name = "email" placeholder = "Your Email" id = "contact-inputs", required>
+                <textarea name = "message" placeholder="Your Message" id = "contact-inputs" required></textarea>
+                <button type = "submit">Submit</button>
+
+            </form>
+
+        </div>

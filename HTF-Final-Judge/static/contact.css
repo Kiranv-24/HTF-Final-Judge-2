@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url('uwp4229674 (1).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    width: 100%;
+}
+
+#quanta{
+    font-family: "Unbounded";
+    color: #040507;
+    font-size: 25px;
+    margin-right: 60px;
+}
+
+#nav-bar {
+    height: 78px;
+    padding: 0 6rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #de56e2;
+    color: white;
+    margin: 20px auto;
+    border-radius: 50px;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#nav-bar img{
+    height: 70px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar a:hover {
+    color: black;
+    border: 1px solid #4b66de;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #4b66de;
+}
+
+#title{
+    font-family: "Unbounded";
+    color: white;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 3rem;
+}
+
+#container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px
+}
+
+#contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: "Unbounded" ;
+    color: #b7b3b3;
+}
+
+#contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+#contact-inputs::placeholder{
+    color: black;
+}
+
+#contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-family: "Unbounded";
+    font-weight: 600;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(170deg, #0178ff, #fa6de7);
+    cursor: pointer;
+    justify-content: center;
+}

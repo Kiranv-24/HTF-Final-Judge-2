@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Detector</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    #result {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px;
+    }
+    .legitimate {
+      color: green;
+    }
+    .phishing {
+      color: red;
+    }
+    #error {
+      color: red;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div id="result"></div>
+  <div id="error"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

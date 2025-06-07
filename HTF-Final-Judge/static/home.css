@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background: #191825; */
+    background-image: url('uwp4229674 (1).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    width: 100%;
+}
+
+#quanta{
+    font-family: "Unbounded";
+    color: #040507;
+    font-size: 25px;
+    margin-right: 60px;
+}
+
+#nav-bar {
+    height: 78px;
+    padding: 0 6rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #de56e2;
+    color: white;
+    margin: 20px auto;
+    border-radius: 50px;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#nav-bar img{
+    height: 70px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar a:hover {
+    color: black;
+    border: 1px solid #4b66de;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #4b66de;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+    margin-top: 2rem;
+}
+#form-button{
+    width: 30%;
+    margin-top: 10px;
+    font-family: "Unbounded";
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(170deg, #015aff, #fb48e3);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    color: white;
+}
+
+#form-button:hover{
+    background: linear-gradient(170deg, #0149ff, #ff12d8);
+}
+
+#custom-label {
+    color: white;
+    font-family: "Unbounded";
+    font-size: 4rem;
+    margin-top: 10rem;
+    margin-bottom: 0.5rem;  
+}
+
+.styled-input {
+    width: 500px;
+    height: 3rem;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.styled-input:focus {
+    border-color: #1fbdddbc;
+    outline: none;
+}
+
+#table-container {
+    margin-top: 10rem;
+    margin-right: 8rem;
+}
+
+table {
+    width: 25rem;;
+    border-collapse: collapse;
+    font-family: "Unbounded";
+    font-size: 1rem;
+    color: #FFF;
+}
+
+thead {
+    background-color: #865DFF;
+}
+
+th, td {
+    border-radius: 12px;
+    border:  #865DFF;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #bf76c1d5;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5d6dff;
+    color: white;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+}

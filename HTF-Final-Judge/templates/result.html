@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <title>SECURE-SURF</title>
+</head>
+<body>
+    <div id="main">
+        
+       <!-- NAV-BAR -->       
+       <div id="nav-bar">
+        <img src="static/Logo2.png">
+        <h4 id="quanta">SECURE-SURF</h4>
+        <a href="/">HOME</a>
+        <a href="/about">ABOUT</a> 
+        <a href="/contact">CONTACT</a>
+    </div>
+
+        <div id="title">Result</div>
+        <h3 id="result">{{ result }}</h3>
+
+        <div id="container">
+            <div id="table-container">
+                <div id="table-title">
+                    <p>DOMAIN DETAILS</p>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Domain</td>
+                            <td>{{ additional_info.domain }}</td>
+                        </tr>
+                        <tr>
+                            <td>IP</td>
+                            <td>{{ additional_info.ip }}</td>
+                        </tr>
+                        <tr>
+                            <td>Number of Sub Domains</td>
+                            <td>{{ additional_info.num_sub_domains }}</td>
+                        </tr>
+                        <tr>
+                            <td>Domain registration length</td>
+                            <td>{{ additional_info.domain_reg_length }}</td>
+                        <tr>
+                            <td>IP Counts</td>
+                            <td>{{ additional_info.ip_counts }}</td>
+                        </tr>
+                        <tr>
+                            <td>Number of SMTP Servers</td>
+                            <td>{{ additional_info.num_smtp_servers }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

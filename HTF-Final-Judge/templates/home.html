@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <title>SECURE-SURF</title>
+</head>
+<body>
+    <div id="main">
+
+        <!-- NAV-BAR -->
+        <div id="nav-bar">
+            <img src="{{ url_for('static', filename='Logo2.png') }}" alt="Logo">
+            <h4 id="quanta">SECURE-SURF</h4>
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/contact">CONTACT</a>
+        </div>
+
+        <!-- CONTAINER -->
+        <div id="container">
+
+            <!-- INPUT CONTAINER -->
+            <form id="url-form">
+                <div id="input-container">
+                    <label for="user-input" id="custom-label">Your Domain here</label>
+                    <input type="text" id="user-input" class="styled-input" name="url" placeholder="example.com" required>
+                    <button type="submit" id="form-button">Submit</button>
+                </div>
+            </form>
+
+            <!-- TABLE-CONTAINER -->
+            <div id="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>‼️ ⚠️ Recent Malicious Websites ⚠️ ‼️</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>http://payment.dev.cruzotec.com/</td></tr>
+                        <tr><td>http://gb-apple.web.app/</td></tr>
+                        <tr><td>https://garbare.ru/</td></tr>
+                        <tr><td>http://swisscome.blogspot.sn/</td></tr>
+                        <tr><td>http://ekoakyanimda.vercel.app/</td></tr>
+                        <tr><td>https://joethenuke.github.io/account</td></tr>
+                        <tr><td>http://swisscome.blogspot.sn/</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS to send JSON -->
+    <script>
+        document.getElementById("url-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // prevent regular form submit
+
+            const urlInput = document.getElementById("user-input").value;
+
+            fetch("/check_phishing", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ url: urlInput })
+            })
+            .then(response => {
+                if (!response.ok) throw new Error("Network response was not ok");
+                return response.json();
+            })
+            .then(data => {
+                alert("Server Response: " + data.message);
+            })
+            .catch(error => {
+                alert("Error: " + error.message);
+            });
+        });
+    </script>
+</body>
+</html>
